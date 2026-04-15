@@ -142,6 +142,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               To nie jest oficjalna strona PTTK. To niezależny przewodnik po systemie odznak.
             </p>
           </div>
+          <p className="mt-3 text-xs text-slate-500 text-center sm:text-left">
+            Kontakt: <a href="mailto:proste-pttk@outlook.com" className="text-emerald-600 hover:underline">proste-pttk@outlook.com</a>
+          </p>
         </div>
       </footer>
     </div>

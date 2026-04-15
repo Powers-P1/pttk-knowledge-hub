@@ -203,6 +203,9 @@ export default function Suggestions() {
             <p className="text-[11px] text-slate-500">
               Uwaga: dane kontaktowe są widoczne wyłącznie dla zalogowanego admina.
             </p>
+            <p className="text-[11px] text-slate-500">
+              W razie pytań możesz napisać na: <a href="mailto:proste-pttk@outlook.com" className="text-emerald-600 hover:underline">proste-pttk@outlook.com</a>
+            </p>
           </form>
         </section>
 
