@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Odznaki PTTK - Historia zmian</title>
+  <id>https://example.com/pttk-knowledge-hub</id>
+  <updated>2026-04-15T11:04:50.411Z</updated>
+  <link href="https://example.com/pttk-knowledge-hub" />
+  <link rel="self" href="https://example.com/pttk-knowledge-hub/atom.xml" />
+  <entry>
+    <title>Kategorie, podkategorie i rozszerzenie katalogu</title>
+    <id>https://example.com/pttk-knowledge-hub#2026-04-15-0</id>
+    <updated>2026-04-15T12:00:00Z</updated>
+    <link href="https://example.com/pttk-knowledge-hub#/zmiany" />
+    <category term="data" />
+    <content type="html"><![CDATA[<ul><li>Wprowadzono jawne pola category i subcategory dla wszystkich rekordów odznak.</li><li>Dodano pierwszą paczkę nowych odznak: KOT, TOK, ŻOT, OInO, GON.</li><li>Rozszerzono UI o filtrowanie po kategorii, podkategorii i zakresie odznaki.</li></ul>]]></content>
+  </entry>
+
+  <entry>
+    <title>Pełna ekstrakcja kandydatów ready_for_intake</title>
+    <id>https://example.com/pttk-knowledge-hub#2026-04-15-1</id>
+    <updated>2026-04-15T12:00:00Z</updated>
+    <link href="https://example.com/pttk-knowledge-hub#/zmiany" />
+    <category term="data" />
+    <content type="html"><![CDATA[<ul><li>Dodano pełne rekordy: Turysta Senior (TS), Turysta Junior/Turystka Juniorka (TJ), DON, NOM, KIEŁBIK, OFK, Kolejowa Odznaka Turystyczna (KOTR), Szlakiem Pomników Historii (SPH).</li><li>Uzupełniono wiek, stopnie, dokumentację, potwierdzanie i ścieżki weryfikacji na podstawie oficjalnych regulaminów PDF.</li><li>Zamknięto listę kandydatów do szybkiego dodania w backlogu coverageResearch.</li></ul>]]></content>
+  </entry>
+
+  <entry>
+    <title>Uruchomienie wersji 1.2</title>
+    <id>https://example.com/pttk-knowledge-hub#2026-04-14-2</id>
+    <updated>2026-04-14T12:00:00Z</updated>
+    <link href="https://example.com/pttk-knowledge-hub#/zmiany" />
+    <category term="data" />
+    <content type="html"><![CDATA[<ul><li>Utrwalono kanoniczny model źródeł z podziałem na tier 1/2/3.</li><li>Wdrożono jawne flagi source_confidence, live_source_status i source_conflict_scope.</li><li>Dodano pełny zestaw rekordów: OTP, GOT, TM, MOT, TPR, TP, DOT, ROK/OKP, ZPN.</li></ul>]]></content>
+  </entry>
+
+  <entry>
+    <title>Rozszerzenia interfejsu i narzędzi</title>
+    <id>https://example.com/pttk-knowledge-hub#2026-04-14-3</id>
+    <updated>2026-04-14T12:00:00Z</updated>
+    <link href="https://example.com/pttk-knowledge-hub#/zmiany" />
+    <category term="ui" />
+    <content type="html"><![CDATA[<ul><li>Dodano porównanie odznak side-by-side (do 3 rekordów).</li><li>Dodano kopiowanie deep-linka do widoku odznaki.</li><li>Uruchomiono tryb ciemny, lazy loading, scroll-to-top i panel debug (feature flag).</li></ul>]]></content>
+  </entry>
+
+  <entry>
+    <title>Weryfikacja źródeł i porządkowanie konfliktów</title>
+    <id>https://example.com/pttk-knowledge-hub#2026-04-14-4</id>
+    <updated>2026-04-14T12:00:00Z</updated>
+    <link href="https://example.com/pttk-knowledge-hub#/zmiany" />
+    <category term="source" />
+    <content type="html"><![CDATA[<ul><li>Health-check potwierdził dostępność 29/29 aktywnych URL-i źródłowych.</li><li>GOT utrzymano ze statusem konfliktu oficjalnych wersji i źródłami legacy.</li><li>Dodano rekord MOK jako stub do reweryfikacji (brak stabilnego tier 1).</li></ul>]]></content>
+  </entry>
+</feed>

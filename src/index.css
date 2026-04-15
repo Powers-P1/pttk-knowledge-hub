@@ -1,0 +1,101 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-forest-50: #f0fdf4;
+  --color-forest-100: #dcfce7;
+  --color-forest-500: #22c55e;
+  --color-forest-600: #16a34a;
+  --color-forest-700: #15803d;
+  --color-forest-800: #166534;
+  --color-forest-900: #14532d;
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode */
+.dark body,
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Dark mode utility overrides */
+html.dark .bg-white { background-color: #1e293b !important; }
+html.dark .bg-slate-50 { background-color: #1e293b !important; }
+html.dark .border-slate-200 { border-color: #334155 !important; }
+html.dark .border-slate-100 { border-color: #334155 !important; }
+html.dark .text-slate-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600 { color: #94a3b8 !important; }
+html.dark .text-slate-500 { color: #94a3b8 !important; }
+html.dark .text-slate-400 { color: #64748b !important; }
+html.dark .bg-slate-100 { background-color: #334155 !important; }
+html.dark .bg-slate-100\/50 { background-color: rgba(51, 65, 85, 0.5) !important; }
+html.dark .hover\:bg-slate-50:hover { background-color: #334155 !important; }
+html.dark .hover\:bg-slate-100:hover { background-color: #475569 !important; }
+html.dark .bg-gradient-to-b { background-image: none !important; background-color: #0f172a !important; }
+
+/* Dark mode: form inputs */
+html.dark select, html.dark input[type="text"] {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+
+/* Dark mode: confidence/pill backgrounds */
+html.dark .bg-emerald-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .bg-amber-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .bg-sky-50 { background-color: rgba(14, 165, 233, 0.1) !important; }
+html.dark .border-emerald-200 { border-color: rgba(16, 185, 129, 0.3) !important; }
+html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.3) !important; }
+html.dark .border-red-200 { border-color: rgba(239, 68, 68, 0.3) !important; }
+html.dark .border-sky-200 { border-color: rgba(14, 165, 233, 0.3) !important; }
+
+/* Dark mode: code blocks */
+html.dark code {
+  background-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Dark mode: hover on cards */
+html.dark .hover\:border-emerald-300:hover { border-color: rgba(16, 185, 129, 0.5) !important; }
+html.dark .hover\:shadow-md:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important; }
+html.dark .hover\:shadow-sm:hover { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important; }
+
+/* Dark mode: links */
+html.dark a.text-emerald-600, html.dark .text-emerald-600 { color: #34d399 !important; }
+html.dark a.text-sky-600, html.dark .text-sky-600 { color: #38bdf8 !important; }
+html.dark .bg-emerald-600 { background-color: #059669 !important; }
+html.dark .hover\:bg-emerald-700:hover { background-color: #047857 !important; }
+html.dark .border-emerald-300 { border-color: rgba(16, 185, 129, 0.4) !important; }
