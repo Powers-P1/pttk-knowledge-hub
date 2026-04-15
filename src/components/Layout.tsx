@@ -26,6 +26,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <div className="bg-slate-900 text-amber-200 border-b border-amber-400/35">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 text-xs sm:text-sm text-center flex items-center justify-center gap-2 flex-wrap">
+          <span>
+            ⛰️ Pomogłem Ci ogarnąć odznaki bez bólu głowy? Zbij piątkę i wesprzyj rozwój strony! ⚡
+          </span>
+          <a
+            href={SUPPORT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full border border-amber-300 text-amber-100 hover:bg-amber-400/15 hover:shadow-[0_0_12px_rgba(251,191,36,0.35)] transition-all font-semibold"
+            aria-label="Wesprzyj projekt w Suppi"
+          >
+            ⚡ Wesprzyj projekt
+          </a>
+        </div>
+      </div>
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-slate-900 focus:px-3 focus:py-2 focus:rounded-md focus:border focus:border-slate-200"
@@ -56,15 +72,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={SUPPORT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-2 inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-semibold border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
-                aria-label="Wesprzyj projekt w Suppi"
-              >
-                ⚡ Wesprzyj projekt
-              </a>
               <button
                 onClick={() => setDark(!dark)}
                 className="ml-2 p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
@@ -110,14 +117,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={SUPPORT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 block px-3 py-2 rounded-full text-sm font-semibold border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
-              >
-                ⚡ Wesprzyj projekt
-              </a>
               <button
                 onClick={() => { setDark(!dark); setMenuOpen(false); }}
                 className="block w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-50 transition-colors"
@@ -142,17 +141,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p>
               To nie jest oficjalna strona PTTK. To niezależny przewodnik po systemie odznak.
             </p>
-          </div>
-          <div className="mt-4 flex justify-center sm:justify-end">
-            <a
-              href={SUPPORT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
-              aria-label="Wesprzyj projekt w Suppi"
-            >
-              ⚡ Wesprzyj projekt (Suppi)
-            </a>
           </div>
         </div>
       </footer>
