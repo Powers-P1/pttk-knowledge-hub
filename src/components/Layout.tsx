@@ -16,6 +16,8 @@ const navLinks = [
   { to: '/faq', label: 'FAQ' },
 ];
 
+const SUPPORT_URL = 'https://suppi.pl/odznaki-pttk';
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,6 +56,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={SUPPORT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-semibold border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
+                aria-label="Wesprzyj projekt w Suppi"
+              >
+                ⚡ Wesprzyj projekt
+              </a>
               <button
                 onClick={() => setDark(!dark)}
                 className="ml-2 p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
@@ -99,6 +110,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={SUPPORT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block px-3 py-2 rounded-full text-sm font-semibold border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
+              >
+                ⚡ Wesprzyj projekt
+              </a>
               <button
                 onClick={() => { setDark(!dark); setMenuOpen(false); }}
                 className="block w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-50 transition-colors"
@@ -126,13 +145,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
           <div className="mt-4 flex justify-center sm:justify-end">
             <a
-              href="https://buymeacoffee.com/"
+              href={SUPPORT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border border-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100 transition-colors"
-              aria-label="Wesprzyj projekt - Buy Me a Coffee"
+              className="inline-flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-[0_0_16px_rgba(245,158,11,0.35)] transition-all"
+              aria-label="Wesprzyj projekt w Suppi"
             >
-              ☕ Wesprzyj projekt (Buy Me a Coffee)
+              ⚡ Wesprzyj projekt (Suppi)
             </a>
           </div>
         </div>
